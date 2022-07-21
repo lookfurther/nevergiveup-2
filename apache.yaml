@@ -1,0 +1,9 @@
+---
+- name: apache
+  hosts: All
+  become: yes
+  tasks:
+    - name: update ubuntu update packages
+      apt:
+        name: apache2
+        
